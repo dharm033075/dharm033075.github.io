@@ -1,0 +1,95 @@
+#maincontainer{
+	background-color:white;
+	width: 100%;
+	height:100%;
+	position: absolute;
+}
+#headerpic{
+	width:100%;
+	height:60px%;
+	position: static;
+	display: block;
+}
+#horizontalnav{
+	postion:relative;
+	text-align: center;		
+}
+#horizontalnav ul{
+	list-style: none;
+}
+#horizontalnav ul li{
+	display: inline;
+	margin-right: 5px;
+	margin-left: 5px;
+	border:1px solid black;
+	border-radius: 3px;
+	padding: 2px 3px 2px 3px;
+	background-color:white;
+}
+#horizontalnav ul li a {
+	color:green;
+	text-decoration: none;
+	font-family: serif;
+
+}
+#horizontalnav ul li a:hover {
+	color:blue;
+	text-decoration: none;
+}
+#horizontalnav ul li a:visited{
+	boreder:1px dashed red;	
+}
+aside{
+	position:relative;
+	float: right;
+}
+
+#footer address center{
+	background-color:white;
+	position: absolute;
+	bottom:10px;
+
+}
+#list option{
+	color:blue;
+	background-color:yellow;
+	font-family: cursive; 
+}
+#list{
+	display: none;
+}
+/* about me styles*/
+#aboutme{
+	background-color: green;
+	position: absolute;
+	float:right;
+}
+/* contact me styles*/
+#contactme{
+
+}
+/*my gallery styles*/
+#gallery a img:hover{
+	border:1px dashed blue;
+}
+a img:nth-of-type(4n){
+	margin-right: 0px;
+}
+#gallery a img:visited{
+	border:1px sollid green;
+}
+#gallery a img{
+	display: inline-block;
+	width:200px;
+	height:100px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+#gallery a {
+	display: inline-block;
+	width:200px;
+	height:100px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
