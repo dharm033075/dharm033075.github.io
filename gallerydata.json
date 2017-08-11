@@ -1,0 +1,9 @@
+var gallerydata='{{"image1":"/home/zemoso/dharm_home_page/images/nature1.jpg"},
+                  {"image2":"/home/zemoso/dharm_home_page/images/nature2.jpg"},
+                  {"image3":"/home/zemoso/dharm_home_page/images/nature1.jpg"},
+                  {"image4":"/home/zemoso/dharm_home_page/images/nature2.jpg"},
+                  {"image5":"/home/zemoso/dharm_home_page/images/nature1.jpg"},
+                  {"image6":"/home/zemoso/dharm_home_page/images/nature2.jpg"},
+                  {"image7":"/home/zemoso/dharm_home_page/images/nature1.jpg"},
+                  {"image8":"/home/zemoso/dharm_home_page/images/nature2.jpg"},
+              }';
