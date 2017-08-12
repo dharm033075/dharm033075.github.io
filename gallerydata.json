@@ -1,12 +1,20 @@
 
-var urkls=[{"image1":"http://www.planwallpaper.com/static/images/canberra_hero_image.jpg",
-     "image2":"https://cdn.pixabay.com/photo/2017/01/06/19/15/soap-bubble-1958650_960_720.jpg",
-     "image3":"https://static.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg",
-     "image4":"http://www.planwallpaper.com/static/images/canberra_hero_image.jpg",
-     "image5":"http://www.planwallpaper.com/static/images/Jennifer-in-Paradi_3204219n.jpg",
-     "image6":"http://www.planwallpaper.com/static/images/canberra_hero_image.jpg",
-     "image7":"http://www.planwallpaper.com/static/images/Benjamin-Blonder.png",
-     "image8":"http://www.planwallpaper.com/static/images/Jennifer-in-Paradi_3204219n.jpg",
-       },{"headerimage":"http://7-themes.com/data_images/out/35/6887285-images.jpg"}]
+
+var data = {
+    "image": [
+        {
+            "imageURL": "http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg",
+            "imageName": "puppy",
+            "information": "puppy Playing in park",
+            "uploadedDate": "2017-07-02"
+        },
+        {
+            "imageURL": "https://www.tourmyindia.com/blog/wp-content/uploads/2013/12/golden-temple.jpg",
+            "imageName": "Temple",
+            "information": "Golden Temple in punjab",
+            "uploadedDate": "2017-07-05"
+        }
+    ]
+}
      
 
