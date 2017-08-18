@@ -10,6 +10,10 @@
 	position: static;
 	display: block;
 }
+#selfInfo{
+	position:relative;
+	float:left;
+}
 #horizontalnav{
 	postion:relative;
 	text-align: center;		
