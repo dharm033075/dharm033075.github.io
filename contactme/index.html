@@ -27,18 +27,17 @@
 
            <form name="formtosubmit" onload="validate_me()">
                 <span><label for="username"Name</label> </span>
-                <input type="text" name="username" placeholder="dharmraj"  required size="15" oninput="validate_name(this)";>
+                <input type="text" name="username" placeholder="dharmraj"  required size="15" disabled oninput="validate_name(this)";>
                 <span><label for="mobilenumber">Mobile Number</label> </span>
-                <input type="Number" name="mobilenumber" placeholder="8348664212" size="10" required  onchange="validate_mobile(this)";>
+                <input type="Number" name="mobilenumber" placeholder="8348664212" size="10" required disabled onchange="validate_mobile(this)";>
                 <span><label for="email">Email-id</label></span>
-                <input type="email" name="email" placeholder="dhar033075@gmail.com" onchange="validate_email(this)";>
+                <input type="email" name="email" placeholder="dhar033075@gmail.com" disabled onchange="validate_email(this)";>
                 <span><label for="gender">Gender</label></span>
-                <select name="gender" onchange="validate_gender(this)">
+                <select name="gender" onchange="validate_gender(this)" disabled>
                   <option selected="" value="Default"> Please select the gender</option>
                   <option name="male" value="male">Male</option>
                   <option name="female" value="female">Female</option>
                 </select>
-
            </form>
 
             <footer id="footer"><address><center> dharmraj prajapat</center></address></footer>
