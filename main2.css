@@ -1,0 +1,345 @@
+#mainContainer{
+	background-color:white;
+}
+#headerpic{
+	width:100%;
+	height:60%;
+	position: static;
+	display: block;
+}
+#horizontalnav{
+	position:relative;
+	text-align: center;
+	background-color:#14998B;
+	height:50px;
+	margin-top:-20px;
+	box-shadow: 2px 2px 2px black; 		
+}
+#horizontalnav ul{
+	list-style: none;
+}
+#horizontalnav ul li{
+	display: inline-block;
+	border:1px solid black;
+	box-shadow: 2px 2px 2px black;
+	background-color:#58F245; 
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 13px;	
+	border-radius: 3px;
+	padding: 2px 3px 2px 3px;
+}
+#horizontalnav ul li{
+	-webkit-transition:width 2s, height 2s, transform 2s;
+	-moz-transition:width 2s, height 2s, transform 2s;
+	transition-timing-function: ease-out;
+	
+}
+#horizontalnav ul li a {
+	color:#06045E;
+	text-decoration: none;
+	font-family: serif;
+	font-weight:bold;
+	/*background-color:hsla(90,80%,80%,.9);*/
+}
+#horizontalnav ul li a:hover {
+	color:black;
+	text-decoration: none;
+ }
+/*#horizontalnav ul li a:visited{
+	boreder:1px dashed red;	
+}*/
+aside{
+	position:relative;
+	float: right;
+}
+#popupForm{
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.4);
+	padding-top:60px;
+}
+#imageContent{
+	margin:5px auto;
+	width:50%;
+	height:285px;
+	background-color:#62CCB6;
+	border:1px solid black;
+	animation: zoomingAnimation .6s;
+	box-shadow: 5px 5px 5px black;
+	overflow: auto;
+}
+
+@-webkit-keyframes zoomingAnimation{
+	from{-webkit-transform:scale(0);}
+	to{-webkit-transform:scale(1);}
+}
+@keyframes zoomingAnimation{
+	from{transform:scale(0);}
+	to{transform:scale(1);}
+}
+#popupBut{
+	position: relative;
+	color:#06045E;
+	background-color:#E69D33; 
+	font-weight: bold;
+	margin-left: 50px;
+	height:25px;
+	width:65px;
+	border-radius:10px;
+}
+#popupBut:active{
+	color:blue;
+	transform:translate(2px,2px);	
+	cursor:progress;
+}
+
+#imageContent input{
+	display: block;
+	margin:5px auto;
+	margin-left:50px; 
+	width:550px;
+	height:30px;
+	background-color:#22EA9B;
+	overflow: auto;
+	font-weight: bold;
+	font-family:cursive;
+	color:blue;
+}
+#imageContent input:hover{
+  	background-color:white;
+}
+#submitButton{
+	position: relative;
+	margin-left:45px;
+	transition: width 3s,height 3s;
+	color:#47F0E5;
+	font-size: 18px;
+	font-weight:bold;
+	background-color:#056264;
+	width:120px;
+	border-radius:10px;
+}
+#submitButton:active{
+	transform:translate(2px,2px);
+}
+#submitButton:hover{
+	color:#15C80C;
+	cursor: pointer;
+}
+#imageContent label{
+    margin-left:10px;
+    margin-top:20px;
+}
+#close{
+	position:absolute;
+	right:25px;
+	top:0px;
+	color:#47F0E5;
+	font-size:25px;
+	font-weight:bold;
+	box-shadow: 5px 5px 5px black;
+}
+#cancle{
+	position:relative;
+	right:-300px;
+	color:#47F0E5;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#056264;
+	border-radius:10px;
+	width:120px;
+}
+#close:hover,#close:focus,#cancle:hover,#cancle:focus{
+	color:#9E1105;
+	cursor: pointer;
+}
+
+#popupDetails{
+	display:none;	
+	z-index:1;
+	margin-bottom:20px; 
+	width:60%;
+	height:50%;
+	overflow: auto;
+	background-color:#DBE786;
+	padding-top:10px;  
+	animation: sideBarAnim .8s;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes sideBarAnim{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+@keyframes sideBarAnim{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+#footer address center{
+	background-color:white;
+	position: absolute;
+	bottom:10px;
+}
+#list option{
+	color:blue;
+	background-color:yellow;
+	font-family: cursive; 
+}
+#list{
+	display: none;
+}
+/* about me styles*/
+@keyframes firstanimation{
+	0%{background-image: url(https://mobileelectron.files.wordpress.com/2012/04/img_0101.jpg);background-size:contain;}
+	25%{background-image: url(http://www.jaipurtravel.com/slide2.jpg);background-size:contain;}
+	50%{background-image: url(https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUeAAAAJDNjNTEyYWNkLWU0ZDQtNGEzZi1hMzU3LThkOThlZDc4YmNkMQ.png);background-size:contain;}
+	100%{background-image:url(http://www.jaipur.org.uk/images/amer-palace-jaipur.jpg);background-size:contain;}
+}	
+#aboutme{
+	background-color: green;
+	position:absolute;
+	float:right;
+	box-shadow: 10px 10px 5px black;
+	animation-name:firstanimation;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate-reverse;  
+}
+#aboutme table thead{
+	text-shadow: 2px 2px red;
+}
+#card{
+	position:relative;
+	float:right;
+	margin-right: 50px;
+	width:20%;
+	height:60%;
+	box-shadow: 5px 5px 5px black; 
+}
+#mypic{
+   position:relative;
+   width:150px;
+   height:150px;
+   margin-left:18%;
+   margin-top: 5px;  
+   border-radius: 45px; 
+}
+#details {
+	text-align:center;
+
+}
+#details a {
+	text-decoration: none;
+}
+#details h2{
+	position: relative;
+	top:-20px;
+}
+#details p{
+	position: relative;
+	top:-30px;
+}
+#details p:nth-child(3){
+	position: relative;
+	top:-45px;
+}
+#details a img{
+	position:relative;
+	width:8%;
+	height:8%px;
+
+}
+#details a:hover{
+    opacity: .75;
+    text-decoration: none;
+}
+#contactBut{
+	background-color: black;
+	width:100%;
+	height:50px;
+	color:white;
+	display:block;
+	text-align: center;
+}
+#contactBut i h2{
+	position: relative;
+	margin-top: 30px;
+	font-family: cursive;
+}
+#contactBut:hover{
+	opacity:.75;	
+}
+
+/* contact me styles*/
+
+/*my gallery styles*/
+#gallery div{
+	display: inline-block;
+	width:200px;
+	height:100px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+#gallery div img { 
+	display: inline-block;
+	width:100%;
+	height:100%;
+	border-radius:10px;
+}
+#gallery div img:hover{ 
+	cursor: pointer;
+
+}
+#gallery div button:nth-of-type(1n){
+	position: relative;
+	right:-10px;
+	top:25px;
+	color:red;
+	background-color:grey;
+	opacity:.4;
+	font-weight:bold;
+}
+#gallery div button:nth-of-type(2n){
+	position: relative;
+	color:red;
+	right:-120px;
+	font-weight:bold;
+	top:25px;
+	color:#030C42;
+	opacity:.4;
+
+}
+#gallery div button:nth-of-type(1n):hover,#gallery div button:nth-of-type(2n):hover{
+	opacity: 1;
+	cursor: pointer;
+}
+#contactMe{
+	text-decoration: none;
+	margin-top: 10px;	
+}
+#contactMe a:hover{
+    color:green;
+}
+#newImages img{
+	width:15%;
+	height:10%;
+	position: relative;
+	box-shadow: 5px 5px 5px grey;
+	margin-right: 4px;
+	-webkit-transition:width 2s,height 2s,transform 2s;*/
+}
+#newImages img:hover{
+       -webkit-transform:scale(.5,.5);        
+}
+
+
+
