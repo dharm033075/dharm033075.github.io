@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dharm home page with javascript</title>
+     <meta http-equiv="Content-Type" Content="text/html"; charset="UTF-8" />
+     <link  type="text/css" rel="stylesheet" href="main2.css"/>
+     <script type="text/javascript">
+      var data='{"table":[{"imgId":"1","imageurl":"https://upload.wikimedia.org/wikipedia/commons/3/35/Hyderabad_from_Char_Minar.jpg","date":"18/08/2017","imagename":"char minar","imgdes":"imported from online sourc"},{"imgId":"2","imageurl":"https://adamseo25.files.wordpress.com/2013/02/hyderabad_dec2011_46.jpg","date":"18/08/2017","imagename":"char minarwa","imgdes":"imported from online sourc"}]}';
+     </script>
+      <script type="text/javascript">
+        function showForm(){
+          document.getElementById("popupForm").style.display='block';
+          var submitBut=document.getElementById('submitButton');   
+          submitBut.removeEventListener('click',updateImage);
+          submitBut.addEventListener('click',addImageToJSON);
+          //document.getElementById("popupForm").style.display='block';
+        }
+
+        var imageId=0;
+        function showUpdateForm(imgId){
+            imageId=imgId;
+            var submitBut=document.getElementById('submitButton');   
+            submitBut.removeEventListener('click',addImageToJSON);
+            submitBut.addEventListener('click',updateImage);
+            document.getElementById("popupForm").style.display='block';
+        }
+        function returnImgId(){return imageId};
+     </script>
+     <script type="text/javascript" src="homepage.js">   	
+     </script> 
+    
+</head>
+<body>
+           <div Id>
+           <div Id="header">
+               <a href=""><img src="images/trolltunga.jpg" Id="headerpic"/></a>
+           </div>
+           <nav Id="horizontalnav">
+               <ul>
+                 <li><a href="index2.html">Home</a></li>
+                 <li><a href="aboutme2.html">About me</a></li>
+                 <li><a href="contactme2.html">Contact Me</a></li>
+                 <li><a href="#">My Gallary</a></li>
+                 <!-- <li><button type="button" onclick="#">click me</button></li> -->  
+                 <button Id="popupBut" onclick="showForm()">Upload</button>
+              <!--  <li><a href="galleryAdmin.html">galleryAdmin</a></li> -->          
+               </ul>
+
+           </nav>
+           <div Id="gallery"></div> 
+          
+           
+           
+           <div Id="popupForm" onclick="">
+             <form Id="imageContent" name="imageform">
+                <label for="url"><b>Image Url:</b></label>
+                <input type="url" Id="imgurl" name="imgurl" onchange="validURL(this)" required placeholder="https://newimage.jpg" >
+                <label for="url"><b>Upload Date:</b></label>
+                <input type="date" Id="update" onchange="dateCheck(this)" placeholder="upload Date   12/12/2017" required>
+                <label for="url"><b>Image Name:</b></label>
+                <input type="text" Id="imageName" onchange="check(this)" placeholder="Image Name" required> <!--new Date().toJSON().slice(0,10).replace(/-/g,'/')-->
+                <label for="imginfo"><b>Image Information:</b></label>
+                <input type="text" Id="imgInfo" name="imageinfos"onchange="check(this)" placeholder="image Information" required >
+                <button type="button" Id="submitButton">Submit</button>
+                <button type="button" Id="close" onclick="document.getElementById('popupForm').style.display='none'">&times;</button>
+                 <button type="button" Id="cancle" onclick="document.getElementById('popupForm').style.display='none'">Cancle</button>
+             </form>
+           </div>
+           <div Id="popupDetails">
+             <p Id="imageDesc"></p>
+           </div>
+      </div>
+           
+
+</body>
+</html>
