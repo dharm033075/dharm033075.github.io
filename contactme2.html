@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dharm home page</title>
+     <meta http-equiv="Content-Type" Content="text/html"; charset="UTF-8" />
+     <link  type="text/css" rel="stylesheet" href="main2.css"/>
+     <script type="text/javascript" src="homepage.js"></script> 
+</head>
+<body>
+        <div Id="mainContainer">
+           <div Id="header">
+               <a href="#"><img src="images/trolltunga.jpg" Id="headerpic"/></a>
+           </div>
+           <nav Id="horizontalnav">
+               <ul>
+           	     <li><a href="index2.html">Home</a></li>
+           	     <li><a href="aboutme2.html">About me</a></li>
+           	     <li><a href="contactme2.html">Contact Me</a></li>
+           	     <li><a href="mygallery2.html">My Gallary</a></li>    	     
+               </ul>
+            </nav>
+           
+           <section id="contactMe">          
+                <a href="https://www.linkedin.com/in/dharm-raj-prajapat-81499789/">Linkedin Profile</a>
+           </section>
+
+           <form name="formtosubmit" onload="validate_me()">
+                <span><label for="username"Name</label> </span>
+                <input type="text" name="username" placeholder="dharmraj"  required maxlength="15" onchange="validate_name(this)";>
+                <span><label for="mobilenumber">Mobile Number</label> </span>
+                <input type="number" name="mobilenumber" placeholder="8348664212" maxlength="10" required  onchange="validate_mobile(this)";>
+                <span><label for="email">Email-id</label></span>
+                <input type="email" name="email" placeholder="dhar033075@gmail.com" onchange="validate_email(this)";>
+                <span><label for="gender">Gender</label></span>
+                <select name="gender" onchange="validate_gender(this)">
+                  <option selected="" value="Default"> Please select the gender</option>
+                  <option name="male" value="male">Male</option>
+                  <option name="female" value="female">Female</option>
+                </select>
+
+           </form>
+
+            <footer id="footer"><address><center> dharmraj prajapat</center></address></footer>
+      </div>
+           
+
+</body>
+</html>
