@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Billing System</title>	
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script type="text/javascript" src="billingSystem.js"></script>
+		
+
+</head>
+<body>
+	<div class="mainContainer">Table
+	<input type="text" Id="searchTable" class="form-control" placeholder="search the table" onkeyup="searchTab()">
+		<div Id="tableSide">			
+		   <div class="panel panel-default" Id="tablePanel" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+		</div>
+		
+		<div Id="itemSide">Menu
+			<input type="text" Id="searchItems" class="form-control" placeholder="Search Items" onkeyup="searchItem()">
+		    <div class="panel panel-default" Id="itemPanel"></div>
+		</div>
+		
+		<div Id="popupDiv" class="panel panel-default">
+			<table class="table table-striped" Id="popupTable">
+				  <tbody>
+				    <tr style="background-color: orange">
+					   <th colspan="3" id="headingOfTable"></th>
+					   <th></th>
+					   <th><strong onclick="tableColor()" Id="closeBut">x</strong></th>
+
+				    </tr>
+				    <tr style="background-color: lightblue" class="heading">
+				       <td>  </td>
+					   <td>Items  Name</td>
+				  	   <td>Item Price</td>
+					   <td>Number of Items</td>	
+					   <td> </td>		
+					</tr>	
+				  </tbody>					
+			</table>
+		</div>
+		
+		<div Id="billPopup" style="display:none">
+			<table class="table table-striped table-responsive" Id="billContent">
+				  <tbody>
+				    <tr style="background-color: orange">
+					   <th colspan="3" id="headingOfBill" ></th>
+					   <th><strong onclick="tableColor2()" Id="print">Print</strong></th>
+				    </tr>
+				    <tr style="background-color: lightblue" class="heading">
+				       <td></td>
+					   <td>Items  Name</td>
+				  	   <td>Item Price</td>
+					   <td>Number of Items</td>						  		
+					</tr>	
+				  </tbody>					
+		</table>
+		</div>
+	</div>
+
+</body>
+</html>

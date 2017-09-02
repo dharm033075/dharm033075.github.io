@@ -1,0 +1,200 @@
+/*.mainContainer{
+	background-image: url(https://previews.123rf.com/images/usikova/usikova1308/usikova130800005/21394482-wallpaper-with-food-and-kitchen-items-on-a-yellow-background-Stock-Vector.jpg);
+	margin-left: 0px;
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+}*/
+#tableSide{
+	position: absolute;
+	margin-right:70%;
+	margin-left:0;
+	width:25%;
+	opacity:1;
+	color:#000;
+	box-sizing: border-box;
+	margin-top:45px;
+	border-right: 3px solid black;
+
+}
+#searchTable{
+	box-shadow: 2px 2px 2px grey;
+	margin:5px;	
+    width: 265px;
+    position: fixed;
+    z-index: 1;
+
+}
+
+#tablePanel{
+	position: relative;
+	overflow-y: auto;
+}
+.eachTable{
+	height:15%;
+	margin:2px;
+	box-shadow: 2px 2px 2px grey;
+	padding: 10px;
+}
+.eachTable:active{
+	background-color: orange;
+}
+.eachTable .panel-body{
+	font-size: 15px;
+}
+.eachTable .panel-heading{
+	font-size: 20px;
+}
+#totalItemsPrice{
+	font-weight: bold;
+	margin:4px;
+
+}
+#closeElement{
+	position: relative;
+	color:red;
+	margin:6px;
+	margin-left:1px;
+}
+
+#itemSide{
+	position:absolute;
+	float:left;
+	top:0px;
+	margin-left:25.3%;
+	width:900px;
+	overflow-y: auto;
+
+}
+
+#itemPanel{
+	width:100%;
+	margin-top: 50px;
+	/*height:100%;*/
+}
+#searchItems{
+	width:30%;
+	box-shadow: 2px 2px 2px grey;
+	margin:5px;
+	z-index: 1;
+	position: fixed;
+}
+
+#addNewItem{
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+.custom{
+	box-shadow: 0px 2px 2px grey;
+	padding:10px;
+	margin:5px;
+}
+.cutom .panel-body{
+	font-size: 15px;
+}
+.custom .panel-heading{
+	font-size: 15px;
+}
+#popupDiv{
+	display:none;
+	z-index:1;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.4);
+	padding-top:60px;
+}
+#popupTable{
+	margin-left:24%;	
+	width:50%; 
+}
+.orderedItem,#lastRow{
+	background-color: lightgreen;
+}
+#closeBut{
+	font-weight: bold;
+	font-size: 20px;
+}
+#closeBut:hover{
+	cursor: pointer;
+	color: white;
+}
+#closeDiv{
+	position:relative;
+	right:-1000px;
+	font-weight: bold;
+	font-size:30px;
+	top:-80px;
+}
+#closeDiv:hover{
+	cursor: pointer;
+}
+#addItemPopup{
+	display:none;
+	position: fixed;
+	overflow: auto;
+}
+
+#billPopup{
+	display:none;
+	z-index:1;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.4);
+	padding-top:60px;
+}
+#billContent{
+	margin-left: 25%;
+}
+.billItem{
+	background-color:#93FAAE;
+}
+#billLastRow{
+	font-weight: bold;
+	font-size:18px;
+	padding:5px;
+	border-radius: 5px;
+	background-color: #3E5046;
+	color:lightgreen;
+}
+#print:hover{
+	color:white;
+	cursor: pointer;
+}
+.heading{
+	font-weight:bold;
+
+}
+/*input[type=text] {
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+#searchinput {
+    width: 200px;
+}
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}*/
