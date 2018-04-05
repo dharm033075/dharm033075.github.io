@@ -1,0 +1,38 @@
+jsonObj={
+"answers": [
+{
+"Jewish law includes which principle used to justify copyright": "unfair encrochment",
+"score": ""
+},
+{
+"When did Sybaris offer patents": "500 bce",
+"score": ""
+},
+{
+"How long was a patent valid in Sybaris?": "one year",
+"score": ""
+},
+{
+"When did Jewish law recognize copyright?": "in the 16th centurary",
+"score": ""
+}
+],
+"relevant_sentences": [
+{
+"sentence1": "Ann Arbor has a council-manager form of governmen",
+"score": ""
+},
+{
+"sentence2": "",
+"score": ""
+},
+{
+"sentence3": "",
+"score": ""
+},
+{
+"sentence4": "1946",
+"score": ""
+}
+]
+}
